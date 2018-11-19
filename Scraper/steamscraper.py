@@ -30,7 +30,7 @@ for game in container:
         #get rating
         rating = game.find("div", class_="col search_discount responsive_secondrow").text
         #rating = game.find("div", class_="col search_reviewscore response_secondrow").text
-        ratings.append(rating)
+        ratings.append(rating.strip().lstrip('-'))
 
 
         #get prices
